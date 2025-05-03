@@ -2,6 +2,7 @@
 import React from "react";
 import SocialLinks from "@/components/SocialLinks";
 import ContactButton from "@/components/ContactButton";
+import CompanyIcons from "@/components/CompanyIcons";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
@@ -21,6 +22,10 @@ const Index = () => {
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               <ContactButton className="w-full md:w-auto" />
+            </div>
+            
+            <div className="pt-4">
+              <CompanyIcons />
             </div>
             
             <div className="pt-4 border-t border-border">
