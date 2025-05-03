@@ -3,7 +3,9 @@ import React from "react";
 import SocialLinks from "@/components/SocialLinks";
 import ContactButton from "@/components/ContactButton";
 import CompanyIcons from "@/components/CompanyIcons";
+import Articles from "@/components/Articles";
 import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
@@ -26,6 +28,10 @@ const Index = () => {
             
             <div className="pt-4">
               <CompanyIcons />
+            </div>
+            
+            <div className="pt-4">
+              <Articles />
             </div>
             
             <div className="pt-4 border-t border-border">
