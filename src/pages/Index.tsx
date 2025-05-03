@@ -15,10 +15,10 @@ const Index = () => {
           <CardContent className="p-0 space-y-8 md:space-y-12">
             <div className="space-y-4 text-center">
               <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
-                Hello, I'm <span className="text-primary">Your Name</span>
+                Hey, I'm <span className="text-primary">Hemal</span>.
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto">
-                A brief description about yourself. Keep it simple and to the point.
+                I love to build products, help entrepreneurs, and jam on fun ideas.
               </p>
             </div>
             

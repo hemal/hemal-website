@@ -50,13 +50,13 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
   return (
     <div className="flex flex-col items-center gap-6">
       <p className="text-sm text-muted-foreground">Companies I've worked with</p>
-      <div className={cn("flex flex-wrap justify-center gap-8", className)}>
+      <div className={cn("flex flex-wrap justify-center gap-6", className)}>
         {companies.map((company) => (
           <div 
             key={company.name} 
             className={cn("flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110", company.color)}
           >
-            <div className="bg-background border border-border rounded-full p-4">
+            <div className="bg-background border border-border rounded-full p-3">
               {company.icon}
             </div>
             <span className="text-xs font-medium">{company.name}</span>

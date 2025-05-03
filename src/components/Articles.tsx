@@ -15,17 +15,17 @@ const Articles = () => {
     {
       title: "When to Hire a Head of Product",
       description: "Guidelines for determining the right timing for your organization",
-      url: "#"
+      url: "https://theskip.substack.com/p/hiring-your-first-head-of-product?"
+    },
+    {
+      title: "Good vs. Bad Product Manager",
+      description: "Key differences that separate exceptional PMs from the rest",
+      url: "https://medium.com/@hemal/the-modern-day-good-product-manager-bad-product-d5b537398e3a"
     },
     {
       title: "How Do I Become a Product Manager?",
       description: "Career path insights and essential skills for aspiring PMs",
-      url: "#"
-    },
-    {
-      title: "Good vs. Bad Product Managers",
-      description: "Key differences that separate exceptional PMs from the rest",
-      url: "#"
+      url: "https://medium.com/@hemal/should-i-become-a-product-manager-5ce77949a13a"
     }
   ];
 
