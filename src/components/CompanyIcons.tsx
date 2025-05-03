@@ -36,7 +36,13 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
     },
     {
       name: "Atlassian",
-      icon: <AtSign className="h-6 w-6" />, // Using AtSign as a placeholder
+      icon: (
+        <img 
+          src="https://logosandtypes.com/alphabet/letter-a/atlassian/" 
+          alt="Atlassian" 
+          className="h-6 w-6"
+        />
+      ),
       color: "text-[#0052CC] hover:text-[#0043a6]"
     }
   ];
