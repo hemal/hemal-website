@@ -19,7 +19,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen flex flex-col justify-center items-center p-4 md:p-8 bg-background transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`min-h-screen flex flex-col justify-center items-center p-4 md:p-8 py-16 md:py-24 bg-background transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <div className="w-full max-w-3xl mx-auto">
         <Card className="border-0 shadow-none bg-transparent">
           <CardContent className="p-0 space-y-10 md:space-y-16">
