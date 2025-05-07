@@ -69,12 +69,19 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
     <div className="flex flex-col items-center gap-6">
       <p className="text-sm text-muted-foreground">Companies I've worked with</p>
       <div className={cn("flex flex-wrap justify-center gap-6", className)}>
-        {companies.map((company) => (
+        {companies.map((company, index) => (
           <div 
             key={company.name} 
-            className={cn("flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110", company.color)}
+            className={cn(
+              "flex flex-col items-center gap-2 opacity-0 animate-fade-up", 
+              company.color
+            )}
+            style={{ 
+              animationDelay: `${index * 150}ms`, 
+              animationFillMode: "forwards" 
+            }}
           >
-            <div className="bg-background border border-border rounded-full p-3 shadow-sm">
+            <div className="bg-background border border-border rounded-full p-3 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-110 hover:rotate-3">
               {company.icon}
             </div>
             <span className="text-xs font-medium">{company.name}</span>
