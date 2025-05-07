@@ -38,7 +38,7 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
       name: "Atlassian",
       icon: (
         <img 
-          src="https://logosandtypes.com/alphabet/letter-a/atlassian/" 
+          src="https://logosandtypes.com/wp-content/uploads/2020/07/atlassian.svg" 
           alt="Atlassian" 
           className="h-6 w-6"
         />
@@ -56,7 +56,7 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
             key={company.name} 
             className={cn("flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110", company.color)}
           >
-            <div className="bg-background border border-border rounded-full p-3">
+            <div className="bg-background border border-border rounded-full p-3 shadow-sm">
               {company.icon}
             </div>
             <span className="text-xs font-medium">{company.name}</span>

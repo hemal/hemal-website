@@ -5,16 +5,15 @@ import ContactButton from "@/components/ContactButton";
 import CompanyIcons from "@/components/CompanyIcons";
 import Articles from "@/components/Articles";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-4 md:p-8 bg-background animate-fade-in">
       <div className="w-full max-w-3xl mx-auto">
         <Card className="border-0 shadow-none bg-transparent">
-          <CardContent className="p-0 space-y-8 md:space-y-12">
+          <CardContent className="p-0 space-y-10 md:space-y-16">
             <div className="space-y-4 text-center">
-              <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
+              <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-scale-in">
                 Hey, I'm <span className="text-primary">Hemal</span>.
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto">
@@ -30,12 +29,12 @@ const Index = () => {
               <CompanyIcons />
             </div>
             
-            <div className="pt-4">
+            <div className="pt-4 bg-accent/20 rounded-lg p-6 shadow-sm">
               <Articles />
             </div>
             
             <div className="pt-4 border-t border-border">
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-6 mt-6">
                 <p className="text-sm text-muted-foreground">Connect with me</p>
                 <SocialLinks iconSize={24} />
               </div>
