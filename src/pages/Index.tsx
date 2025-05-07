@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from "react";
 import SocialLinks from "@/components/SocialLinks";
-import ContactButton from "@/components/ContactButton";
 import CompanyIcons from "@/components/CompanyIcons";
 import Articles from "@/components/Articles";
 import { Card, CardContent } from "@/components/ui/card";
@@ -23,7 +22,7 @@ const Index = () => {
       <div className="w-full max-w-3xl mx-auto">
         <Card className="border-0 shadow-none bg-transparent">
           <CardContent className="p-0 space-y-10 md:space-y-16">
-            <div className="space-y-4 text-center">
+            <div className="space-y-6 text-center">
               <h1 className={`text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
                 Hey, I'm <span className="text-primary">Hemal</span>.
               </h1>
@@ -32,16 +31,12 @@ const Index = () => {
               </p>
             </div>
             
-            <div className={`flex flex-col md:flex-row items-center justify-center gap-4 transition-all duration-700 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-              <ContactButton className="w-full md:w-auto" />
-            </div>
-            
-            <div className={`pt-4 transition-all duration-700 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-              <CompanyIcons />
-            </div>
-            
-            <div className={`pt-4 bg-accent/20 rounded-lg p-6 shadow-sm transition-all duration-700 delay-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+            <div className={`pt-4 bg-accent/20 rounded-lg p-6 shadow-sm transition-all duration-700 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
               <Articles />
+            </div>
+            
+            <div className={`pt-4 transition-all duration-700 delay-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+              <CompanyIcons />
             </div>
             
             <div className={`pt-4 border-t border-border transition-all duration-700 delay-1200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>

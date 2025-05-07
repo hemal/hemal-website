@@ -33,12 +33,12 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
     },
     {
       name: "Instagram",
-      icon: <Instagram className="h-6 w-6" />,
+      icon: <Instagram className="h-6 w-6 fill-[#E4405F] stroke-white" />,
       color: "text-[#E4405F] hover:text-[#d62d50]"
     },
     {
       name: "Twitter",
-      icon: <Twitter className="h-6 w-6" />,
+      icon: <Twitter className="h-6 w-6 fill-[#1DA1F2] stroke-white" />,
       color: "text-[#1DA1F2] hover:text-[#0d8edb]"
     },
     {
@@ -61,7 +61,7 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
           className="h-6 w-6 object-contain"
         />
       ),
-      color: "text-[#00A651] hover:text-[#008442]"
+      color: "text-[#FF6B35] hover:text-[#e85f2d]"
     }
   ];
 
