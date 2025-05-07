@@ -9,7 +9,7 @@ interface ContactButtonProps {
 }
 
 const ContactButton = ({ 
-  email = "your.email@example.com",
+  email = "hello@hem.al",
   className 
 }: ContactButtonProps) => {
   const handleEmailClick = () => {

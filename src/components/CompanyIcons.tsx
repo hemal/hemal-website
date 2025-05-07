@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Facebook, Instagram, Twitter, AtSign } from "lucide-react";
+import { Instagram, Twitter, AtSign } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CompanyIconsProps {
@@ -10,9 +10,26 @@ interface CompanyIconsProps {
 const CompanyIcons = ({ className }: CompanyIconsProps) => {
   const companies = [
     {
-      name: "Facebook",
-      icon: <Facebook className="h-6 w-6" />,
-      color: "text-[#1877F2] hover:text-[#0b5fcc]"
+      name: "Atlassian",
+      icon: (
+        <img 
+          src="https://logosandtypes.com/wp-content/uploads/2020/07/atlassian.svg" 
+          alt="Atlassian" 
+          className="h-6 w-6"
+        />
+      ),
+      color: "text-[#0052CC] hover:text-[#0043a6]"
+    },
+    {
+      name: "Meta",
+      icon: (
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/512px-Meta_Platforms_Inc._logo.svg.png" 
+          alt="Meta" 
+          className="h-6 w-6"
+        />
+      ),
+      color: "text-[#0668E1] hover:text-[#0552b6]"
     },
     {
       name: "Instagram",
@@ -26,24 +43,25 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
     },
     {
       name: "Crashlytics",
-      icon: <AtSign className="h-6 w-6" />, // Using AtSign as a placeholder
-      color: "text-[#4285F4] hover:text-[#2a75e8]"
-    },
-    {
-      name: "Root Insurance",
-      icon: <AtSign className="h-6 w-6" />, // Using AtSign as a placeholder
-      color: "text-[#00A651] hover:text-[#008442]"
-    },
-    {
-      name: "Atlassian",
       icon: (
         <img 
-          src="https://logosandtypes.com/wp-content/uploads/2020/07/atlassian.svg" 
-          alt="Atlassian" 
+          src="https://www.stickpng.com/assets/images/5847f31bcef1014c0b5e4a70.png" 
+          alt="Crashlytics" 
           className="h-6 w-6"
         />
       ),
-      color: "text-[#0052CC] hover:text-[#0043a6]"
+      color: "text-[#4285F4] hover:text-[#2a75e8]"
+    },
+    {
+      name: "Root",
+      icon: (
+        <img 
+          src="https://usercontent.one/wp/cashinvoice.it/wp-content/uploads/sites/6/2020/03/Root-Logo-Orange-Big-2048x512.png?media=1705480444" 
+          alt="Root Insurance" 
+          className="h-6 w-6 object-contain"
+        />
+      ),
+      color: "text-[#00A651] hover:text-[#008442]"
     }
   ];
 
