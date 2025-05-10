@@ -40,7 +40,7 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
       name: "Twitter",
       icon: (
         <img 
-          src="https://www.citypng.com/public/uploads/preview/hd-official-twitter-bird-logo-icon-png-701751694781844mov9tie6wt.png" 
+          src="https://www.pngpacks.com/uploads/data/301/thumbs/IMG_mhTxnauAkb5V.png" 
           alt="Twitter" 
           className="h-6 w-6 object-contain"
         />
