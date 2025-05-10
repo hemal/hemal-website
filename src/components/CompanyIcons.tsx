@@ -42,7 +42,7 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
         <img 
           src="https://www.pngpacks.com/uploads/data/301/thumbs/IMG_mhTxnauAkb5V.png" 
           alt="Twitter" 
-          className="h-6 w-6 object-contain"
+          className="h-6 w-6 object-contain bg-white rounded-full"
         />
       ),
       color: "text-[#1DA1F2] hover:text-[#0d8edb]"
@@ -72,9 +72,9 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-8">
       <p className="text-sm text-muted-foreground">Companies I've worked with</p>
-      <div className={cn("flex flex-wrap justify-center gap-6", className)}>
+      <div className={cn("flex flex-wrap justify-center gap-8", className)}>
         {companies.map((company, index) => (
           <div 
             key={company.name} 
