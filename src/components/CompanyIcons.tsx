@@ -24,9 +24,9 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
       name: "Meta",
       icon: (
         <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/512px-Meta_Platforms_Inc._logo.svg.png" 
+          src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" 
           alt="Meta" 
-          className="h-6 w-6"
+          className="h-6 w-6 object-contain"
         />
       ),
       color: "text-[#0668E1] hover:text-[#0552b6]"
@@ -38,16 +38,22 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
     },
     {
       name: "Twitter",
-      icon: <Twitter className="h-6 w-6 fill-[#1DA1F2] stroke-white" />,
+      icon: (
+        <img 
+          src="https://www.citypng.com/public/uploads/preview/hd-official-twitter-bird-logo-icon-png-701751694781844mov9tie6wt.png" 
+          alt="Twitter" 
+          className="h-6 w-6 object-contain"
+        />
+      ),
       color: "text-[#1DA1F2] hover:text-[#0d8edb]"
     },
     {
       name: "Crashlytics",
       icon: (
         <img 
-          src="https://www.stickpng.com/assets/images/5847f31bcef1014c0b5e4a70.png" 
+          src="https://cdn.iconscout.com/icon/free/png-512/free-crashlytics-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-13-pack-icons-283414.png?f=webp&w=512" 
           alt="Crashlytics" 
-          className="h-6 w-6"
+          className="h-6 w-6 object-contain"
         />
       ),
       color: "text-[#4285F4] hover:text-[#2a75e8]"
