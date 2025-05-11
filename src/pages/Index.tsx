@@ -18,23 +18,22 @@ const Index = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen flex flex-col justify-center items-center p-4 md:p-8 py-16 md:py-24 bg-background transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`min-h-screen flex flex-col justify-center items-center p-4 md:p-8 py-12 md:py-16 bg-background transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <div className="w-full max-w-3xl mx-auto">
         <Card className="border-0 shadow-none bg-transparent">
-          <CardContent className="p-0 space-y-14 md:space-y-20">
-            {/* Completely rebuilt title and subtitle section */}
-            <div className="space-y-12 text-center">
-              <div className="py-4">
+          <CardContent className="p-0 space-y-10 md:space-y-14">
+            {/* Redesigned title section with different font styling */}
+            <div className="text-center">
+              <div className="mb-4 py-6">
                 <h1 
-                  className={`inline-block text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-8 transition-all duration-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                  className={`font-sans text-4xl md:text-6xl font-bold leading-relaxed tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                  style={{ lineHeight: '1.2', paddingBottom: '0.25rem' }}
                 >
                   Hey, I'm <span className="text-primary">Hemal</span>.
                 </h1>
-              </div>
-              
-              <div className="mt-12">
+                
                 <p 
-                  className={`text-lg md:text-xl text-muted-foreground max-w-lg mx-auto transition-all duration-700 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                  className={`mt-3 text-lg md:text-xl text-muted-foreground max-w-lg mx-auto transition-all duration-700 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
                 >
                   I love to build products, help entrepreneurs, and jam on fun ideas.
                 </p>
@@ -45,12 +44,12 @@ const Index = () => {
               <Articles />
             </div>
             
-            <div className={`pt-4 transition-all duration-700 delay-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+            <div className={`pt-2 transition-all duration-700 delay-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
               <CompanyIcons />
             </div>
             
-            <div className={`pt-4 border-t border-border transition-all duration-700 delay-1200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-              <div className="flex flex-col items-center gap-6 mt-6">
+            <div className={`pt-2 border-t border-border transition-all duration-700 delay-1200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+              <div className="flex flex-col items-center gap-6 mt-4">
                 <p className="text-sm text-muted-foreground">Connect with me</p>
                 <SocialLinks iconSize={24} />
               </div>

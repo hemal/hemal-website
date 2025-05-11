@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Instagram, Twitter, AtSign } from "lucide-react";
+import { Twitter, AtSign } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CompanyIconsProps {
@@ -66,9 +66,9 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-4">
       <p className="text-sm text-muted-foreground">Companies I've worked with</p>
-      <div className={cn("grid grid-cols-3 md:grid-cols-6 gap-8", className)}>
+      <div className={cn("grid grid-cols-3 md:grid-cols-6 gap-6 justify-items-center", className)}>
         {companies.map((company, index) => (
           <div 
             key={company.name} 
