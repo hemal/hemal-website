@@ -40,6 +40,7 @@ const Index = () => {
               </div>
             </div>
             
+            {/* Moved Articles section up */}
             <div className={`pt-4 bg-accent/20 rounded-lg p-6 shadow-sm transition-all duration-700 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
               <Articles />
             </div>
