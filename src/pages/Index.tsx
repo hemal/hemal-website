@@ -22,10 +22,12 @@ const Index = () => {
       <div className="w-full max-w-3xl mx-auto">
         <Card className="border-0 shadow-none bg-transparent">
           <CardContent className="p-0 space-y-14 md:space-y-20">
-            <div className="space-y-16 text-center">
-              <h1 className={`text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                Hey, I'm <span className="text-primary">Hemal</span>.
-              </h1>
+            <div className="space-y-20 text-center">
+              <div className="pb-6"> {/* Added padding at the bottom to ensure the 'y' doesn't get cut off */}
+                <h1 className={`text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+                  Hey, I'm <span className="text-primary">Hemal</span>.
+                </h1>
+              </div>
               <p className={`text-lg md:text-xl text-muted-foreground max-w-lg mx-auto transition-all duration-700 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
                 I love to build products, help entrepreneurs, and jam on fun ideas.
               </p>
