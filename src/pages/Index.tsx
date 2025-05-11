@@ -22,7 +22,7 @@ const Index = () => {
       <div className="w-full max-w-3xl mx-auto">
         <Card className="border-0 shadow-none bg-transparent">
           <CardContent className="p-0 space-y-14 md:space-y-20">
-            <div className="space-y-12 text-center">
+            <div className="space-y-16 text-center">
               <h1 className={`text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
                 Hey, I'm <span className="text-primary">Hemal</span>.
               </h1>
