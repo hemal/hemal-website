@@ -33,7 +33,7 @@ const CompanyIcons = ({ className }: CompanyIconsProps) => {
     },
     {
       name: "Instagram",
-      icon: <Instagram className="h-6 w-6 fill-[#E4405F] stroke-white" />,
+      icon: <Instagram className="h-6 w-6" />,
       color: "text-[#E4405F] hover:text-[#d62d50]"
     },
     {
