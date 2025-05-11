@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Twitter, AtSign } from "lucide-react";
+import { Twitter, Instagram, AtSign } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CompanyIconsProps {
